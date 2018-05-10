@@ -119,14 +119,14 @@
                     })
                 }),
                 new ol.layer.Tile({
-                    title: 'province',
+                    title: 'unito',
                     visible: true,
                     source: new ol.source.TileWMS({
                         projection: ETRS89proj,
                         attributions: catasto_attributions,
                         url: 'https://wms.cartografia.agenziaentrate.gov.it/inspire/wms/ows01.php',
                         params: {
-                            'LAYERS': 'province,vestizioni,acque,strade,fabbricati,CP.CadastralZoning,CP.CadastralParcel'
+                            'LAYERS': 'CP.CadastralParcel,CP.CadastralZoning,fabbricati,strade,acque,vestizioni,province,'
                         },
                         serverType: 'mapserver',
                         tileGrid: tileGrid
