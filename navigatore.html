@@ -126,7 +126,7 @@
                         attributions: catasto_attributions,
                         url: 'https://wms.cartografia.agenziaentrate.gov.it/inspire/wms/ows01.php',
                         params: {
-                            'LAYERS': 'province,acque,fabbricati,vestizioni,CP.CadastralZoning'
+                            'LAYERS': 'province,vestizioni,acque,strade,fabbricati,CP.CadastralZoning,CP.CadastralParcel'
                         },
                         serverType: 'mapserver',
                         tileGrid: tileGrid
@@ -134,7 +134,7 @@
                 }),
                 new ol.layer.Tile({
                     title: 'fogli',
-                    visible: true,
+                    visible: false,
                     source: new ol.source.TileWMS({
                         projection: ETRS89proj,
                         attributions: catasto_attributions,
@@ -173,7 +173,7 @@
                 }),
                 new ol.layer.Tile({
                     title: 'particelle',
-                    visible: true,
+                    visible: false,
                     source: new ol.source.TileWMS({
                         projection: ETRS89proj,
                         attributions: catasto_attributions,
@@ -186,7 +186,7 @@
                 }),
                 new ol.layer.Tile({
                     title: 'fabbricati',
-                    visible: true,
+                    visible: false,
                     source: new ol.source.TileWMS({
                         projection: ETRS89proj,
                         attributions: catasto_attributions,
@@ -199,7 +199,7 @@
                 }),
                 new ol.layer.Tile({
                     title: 'vestizioni',
-                    visible: true,
+                    visible: false,
                     source: new ol.source.TileWMS({
                         projection: ETRS89proj,
                         attributions: catasto_attributions,
