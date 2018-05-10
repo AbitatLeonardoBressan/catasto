@@ -88,7 +88,7 @@
             url: 'https://wms.cartografia.agenziaentrate.gov.it/inspire/wms/ows01.php',
             params: {
                 'LAYERS': 'CP.CadastralParcel',
-                'TILED': false
+                'TILED': true
             },
             serverType: 'mapserver'
         });
@@ -126,8 +126,7 @@
                         attributions: catasto_attributions,
                         url: 'https://wms.cartografia.agenziaentrate.gov.it/inspire/wms/ows01.php',
                         params: {
-                            'LAYERS': 'province',
-                            'TILED': false
+                            'LAYERS': 'province'
                         },
                         serverType: 'mapserver',
                         tileGrid: tileGrid
